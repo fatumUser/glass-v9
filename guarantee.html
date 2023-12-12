@@ -1,0 +1,503 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="pop-ups.css">
+    <title>Гарантия</title>
+  </head>
+  <body id="body">
+
+    <div id="wrap-pop-ups3" class="wrap-pop-ups3">
+        <div class="blur"></div>
+        <div class="pop-up">
+            <div onclick="ClosePopUps3()" class="close">       
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 7.5L7.5 22.5" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 7.5L22.5 22.5" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>    
+            </div>
+            <div id="pop-up-cart" class="pop-up-cart">
+                <p class="title-pop-up">Корзина покупок</p>
+                <div class="row flex-alg-cntr">
+                    <div class="wrap-name-container-count flex-alg-cntr">
+                        <p class="name-product">
+                            Стекло правое кузовное для Caterpillar 120M AWD
+                        </p>
+                        <div class="container-count flex-alg-cntr">
+                            <div class="minus">
+                                <div class="line"></div>
+                            </div>
+                            <p class="num">1</p>
+                            <div class="plus">
+        
+                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.0332 4.37305V6.07227H0.849609V4.37305H9.0332ZM5.82031 0.222656V10.5742H4.0918V0.222656H5.82031Z"
+                                        fill="white" />
+                                </svg>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delete">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 6H5H21" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6"
+                                stroke="#57595E" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="row-buttons flex-alg-cntr">
+                    <button onclick="ClosePopUps3()" class="btn2">Продолжить покупки</button>
+                    <button onclick="popUpOrderShow()" class="blue-button">Купить</button>
+                </div>
+            </div>
+
+            <div id="pop-up-order" class="pop-up-reg pop-up-order">
+                <p class="title-pop-up">Ваш заказ</p>
+                <p class="desc-pop-up">Оставьте ваш номер телефона, и наши менеджеры свяжутся с вами для оформления заказа</p>
+                <p class="title-pop-up title2-pop-up">Покупок в корзине: <span>1</span></p>
+                <div class="container-inputs">
+                <input type="text" placeholder="Ваше имя">
+                <input type="number" placeholder="+7 999 999-99-99">
+                <input type="email" placeholder="Электронная почта">
+                <input id="comment-input" type="text" placeholder="Комментарий к заказу (необезательно)">
+                </div>   
+                
+                <div class="row-buttons flex-alg-cntr">
+                    <button onclick="popUpOrderBack()" class="btn2">Назад</button>
+                    <button class="blue-button">Купить</button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap-pop-ups" class="wrap-pop-ups">
+        <div class="blur"></div>
+        <div class="pop-up">
+            <div onclick="ClosePopUps()" class="close">       
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 7.5L7.5 22.5" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 7.5L22.5 22.5" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>    
+            </div>
+            <div id="pop-up-log" class="pop-up-log">
+        
+            <p class="title-pop-up">Войти в акаунт</p>
+            <p class="desc-pop-up">После входа в систему вы сможете сохранять товары в корзине, оплачивать заказы онлайн, отслеживать выполнение доставки и многое другое!</p>
+            <div class="container-inputs">
+            <input type="email" placeholder="Электронная почта">
+            <input type="password" placeholder="Пароль">
+            </div>   
+            <a class="link" href="#">Забыли пароль?</a>
+            <div class="row-buttons flex-alg-cntr">
+                <button class="blue-button">Войти</button>
+                <button onclick="popUpRegShow()" class="btn2">Регистрация</button>
+            </div>
+        </div>
+    
+        <div id="pop-up-reg" class="pop-up-reg">
+            <p class="title-pop-up">Регистрация</p>
+            <p class="desc-pop-up">Зарегистрируйтесь сегодня, чтобы получить доступ к удобному сохранению товаров, быстрому оформлению заказов, онлайн-оплате, а также многим другим возможностям.</p>
+            <div class="container-inputs">
+            <input type="text" placeholder="Ваше имя">
+            <input type="number" placeholder="+7 999 999-99-99">
+            <input type="email" placeholder="Электронная почта">
+            <input type="password" placeholder="Придумайте пароль">
+            <input type="password" placeholder="Повторите пароль">
+            </div>   
+            
+            <div class="row-buttons flex-alg-cntr">
+                <button onclick="popUpLogShow()" class="blue-button">Войти</button>
+            </div>
+            <a class="link" href="#">Уже есть аккаунт? Войти</a>
+        </div>
+    
+    </div>
+    </div>
+    
+        <div id="wrap-pop-ups2" class="wrap-pop-ups2">
+            <div class="blur"></div>
+            <div class="pop-up">
+                <div onclick="ClosePopUps2()" class="close">       
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.5 7.5L7.5 22.5" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 7.5L22.5 22.5" stroke="#57595E" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </div>
+            <div id="pop-up-fiz" class="pop-up-fiz">
+                <p class="title-pop-up">Регистрация для физических лиц</p>
+                <div class="container-inputs">
+                    <div class="wrap-input">
+                        <p class="name-input">Логин</p>
+                        <input type="email" placeholder="Введите адрес электронной почты">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Пароль</p>
+                        <input type="password" placeholder="Придумайте пароль">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">ФИО</p>
+                        <input type="text" placeholder="Введите Фамилию Имя Отчество">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Город</p>
+                        <input type="text" placeholder="Город">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Номер телефона</p>
+                        <input type="number" placeholder="+7 999 999-99-99">
+                    </div>
+                </div>   
+                <div class="row-buttons flex-alg-cntr">
+                    <button onclick="popUpBack()" class="btn2">Назад</button>
+                    <button class="blue-button">Зарегистрироваться</button>
+                </div>
+            </div>
+        
+            <div id="pop-up-urid" class="pop-up-urid">
+                <p class="title-pop-up">Регистрация для юридических лиц и ИП</p>
+                <div class="container-inputs">
+                    <div class="wrap-input">
+                        <p class="name-input">Логин</p>
+                        <input type="email" placeholder="Введите адрес электронной почты">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Пароль</p>
+                        <input type="password" placeholder="Придумайте пароль">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">ФИО</p>
+                        <input type="text" placeholder="Введите Фамилию Имя Отчество">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Город</p>
+                        <input type="text" placeholder="Город">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Организация</p>
+                        <input type="text" placeholder="Введите название организации">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">ИНН</p>
+                        <input type="text" placeholder="Введите ИНН организации">
+                    </div>
+                    <div class="wrap-input">
+                        <p class="name-input">Номер телефона</p>
+                        <input type="number" placeholder="+7 999 999-99-99">
+                    </div>
+                </div>   
+                <div class="row-buttons flex-alg-cntr">
+                    <button onclick="popUpBack()" class="btn2">Назад</button>
+                    <button class="blue-button">Зарегистрироваться</button>
+                </div>
+            </div>
+        
+            <div id="pop-up-wholesale-buyers-reg" class="pop-up-wholesale-buyers-reg">
+                <p class="title-pop-up">Регистрация для оптовых клиентов</p>
+                <p class="desc-pop-up">Выберите Тип Клиента <br>
+                    Определите ваш статус: физическое или юридическое лицо. Это поможет нам предоставить вам наилучший сервис и условия сотрудничества</p>
+               
+                <div class="row-buttons flex-alg-cntr">
+                    <a onclick="popUpFizShow()" href="#" class="btn"><p>Регистрация для физ. лиц</p></a>
+                    <a onclick="popUpUridShow()" href="#" class="btn"><p>Регистрация для юр. лиц и ИП</p></a>
+                </div>
+            </div>
+        </div>
+        </div>    
+    
+        <header>
+        <div class="wrap-content wrap-section">
+          <div class="left-content">
+            <div class="wrap1 flex-alg-cntr">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27 12.4545C27 21.3636 15.5 29 15.5 29C15.5 29 4 21.3636 4 12.4545C4 9.41661 5.2116 6.5031 7.36827 4.35496C9.52494 2.20681 12.45 1 15.5 1C18.55 1 21.4751 2.20681 23.6317 4.35496C25.7884 6.5031 27 9.41661 27 12.4545Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15 17C17.2091 17 19 15.2091 19 13C19 10.7909 17.2091 9 15 9C12.7909 9 11 10.7909 11 13C11 15.2091 12.7909 17 15 17Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+        
+              <p class="p1">Москва</p>
+            </div>
+            <div class="wrap2 flex-alg-cntr">
+                <a href="/search.html">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 24C19.5228 24 24 19.5228 24 14C24 8.47715 19.5228 4 14 4C8.47715 4 4 8.47715 4 14C4 19.5228 8.47715 24 14 24Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26 26L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                    <svg onclick="popUpsShow()" class="acc" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 27V24.3333C25 22.9188 24.4732 21.5623 23.5355 20.5621C22.5979 19.5619 21.3261 19 20 19H10C8.67392 19 7.40215 19.5619 6.46447 20.5621C5.52678 21.5623 5 22.9188 5 24.3333V27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 14C17.7614 14 20 11.7614 20 9C20 6.23858 17.7614 4 15 4C12.2386 4 10 6.23858 10 9C10 11.7614 12.2386 14 15 14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                
+                    
+                    <svg onclick="popUps3Show()" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5 28C12.3284 28 13 27.3284 13 26.5C13 25.6716 12.3284 25 11.5 25C10.6716 25 10 25.6716 10 26.5C10 27.3284 10.6716 28 11.5 28Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.5 28C26.3284 28 27 27.3284 27 26.5C27 25.6716 26.3284 25 25.5 25C24.6716 25 24 25.6716 24 26.5C24 27.3284 24.6716 28 25.5 28Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1H6.09091L9.50182 17.9603C9.6182 18.5434 9.93697 19.0672 10.4023 19.4401C10.8677 19.8129 11.45 20.0109 12.0473 19.9995H24.4182C25.0155 20.0109 25.5978 19.8129 26.0631 19.4401C26.5285 19.0672 26.8473 18.5434 26.9636 17.9603L29 7.33318H7.36364" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </div>
+          </div>
+    
+          <a class="logo" href="/">
+            <img class="logo" src="/img/logo.png" alt="" />
+          </a>
+    
+          <div class="right-content">
+            <p onclick="popUps2Show()" class="button" href=""> Регистрация для оптовых клиентов </p>
+            <div onclick="burgerMenu()" class="burger">  
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.6621 20.1464H4.66211" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    <path d="M34.6621 13.4797H4.66211" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    <path d="M34.6621 26.813H4.66211" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                </svg>
+            </div>
+          </div>
+        </div>
+        <div id="header__nav" class="row-nav">
+             <div class="wrap-content wrap-section">
+                <div class="link-wrap">
+                    <a href="/about-company.html">О нас</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="/shop.html">Магазин</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="/services-prices.html">Услуги</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="/guarantee.html">Гарантия</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="/contacts.html">Контакты</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="/gallery.html">Галерея</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="">Сотруднечество</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="/faq.html">Вопросы</a>
+                </div>
+             </div>
+        </div>
+    </header>
+
+    <section class="section-shop section-about-company wrap-section flex-alg-cntr">
+        <p class="bread-crumbs"><a href="/">Гланая</a><span>/</span>Гарантия</p>
+        <img class="el-mobile" src="img/guarantee-mobile.png" alt="">
+        <div class="left-content">
+            <h1 class="title-page">Гарантия</h1>
+            <p class="desc">
+                Наши гарантии распространяются на различные аспекты. В случае выявления проблем, мы обеспечиваем надлежащее решение, гарантируя ваше спокойствие и уверенность в долгосрочной надёжности нашей продукции
+            </p>
+            <a href="#" class="blue-button">Перейти в каталог</a>
+        </div>
+        <img src="img/guarantee.png" alt="">
+    </section>
+
+    <div class="page">
+    <section class="section-quality-assurance section-guarantees-cases wrap-section el-scroll-hidden">
+
+        <h2 class="title-section">Гарантии качества</h2>
+        <p class="txt-info">
+            Наши гарантии распространяются на различные аспекты. В случае выявления проблем, мы обеспечиваем надлежащее решение, гарантируя ваше спокойствие и уверенность в долгосрочной надёжности нашей продукции
+        </p>
+
+        <div class="row flex-alg-cntr">
+
+            <p class="punct flex-alg-cntr">
+                <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.58203 12.3897C3.06427 12.3911 2.5575 12.5392 2.12035 12.8166C1.6832 13.0941 1.33354 13.4896 1.11181 13.9575C0.890087 14.4254 0.805361 14.9465 0.867437 15.4605C0.929512 15.9745 1.13585 16.4605 1.46259 16.8621L8.42778 25.3945C8.67612 25.7028 8.99446 25.9475 9.35635 26.1081C9.71823 26.2688 10.1132 26.3407 10.5085 26.3181C11.3539 26.2726 12.1172 25.8204 12.6038 25.0768L27.0723 1.77534C27.0747 1.77145 27.0772 1.7676 27.0797 1.76381C27.2155 1.55536 27.1714 1.14229 26.8912 0.882787C26.8142 0.811525 26.7235 0.756776 26.6246 0.721912C26.5256 0.687048 26.4206 0.672806 26.316 0.680065C26.2113 0.687323 26.1093 0.715928 26.0161 0.764118C25.9229 0.812307 25.8406 0.879061 25.7742 0.960268C25.769 0.966653 25.7636 0.972941 25.7581 0.979133L11.1665 17.4655C11.111 17.5283 11.0435 17.5793 10.9681 17.6158C10.8927 17.6522 10.8108 17.6733 10.7271 17.6779C10.6434 17.6824 10.5597 17.6703 10.4808 17.6421C10.4019 17.614 10.3293 17.5705 10.2674 17.5142L5.42466 13.1073C4.92171 12.6462 4.26433 12.3902 3.58203 12.3897Z" fill="#48BEFF"></path>
+                </svg>
+                Протечка стекла
+            </p>
+            <p class="punct flex-alg-cntr">
+                <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.58203 12.3897C3.06427 12.3911 2.5575 12.5392 2.12035 12.8166C1.6832 13.0941 1.33354 13.4896 1.11181 13.9575C0.890087 14.4254 0.805361 14.9465 0.867437 15.4605C0.929512 15.9745 1.13585 16.4605 1.46259 16.8621L8.42778 25.3945C8.67612 25.7028 8.99446 25.9475 9.35635 26.1081C9.71823 26.2688 10.1132 26.3407 10.5085 26.3181C11.3539 26.2726 12.1172 25.8204 12.6038 25.0768L27.0723 1.77534C27.0747 1.77145 27.0772 1.7676 27.0797 1.76381C27.2155 1.55536 27.1714 1.14229 26.8912 0.882787C26.8142 0.811525 26.7235 0.756776 26.6246 0.721912C26.5256 0.687048 26.4206 0.672806 26.316 0.680065C26.2113 0.687323 26.1093 0.715928 26.0161 0.764118C25.9229 0.812307 25.8406 0.879061 25.7742 0.960268C25.769 0.966653 25.7636 0.972941 25.7581 0.979133L11.1665 17.4655C11.111 17.5283 11.0435 17.5793 10.9681 17.6158C10.8927 17.6522 10.8108 17.6733 10.7271 17.6779C10.6434 17.6824 10.5597 17.6703 10.4808 17.6421C10.4019 17.614 10.3293 17.5705 10.2674 17.5142L5.42466 13.1073C4.92171 12.6462 4.26433 12.3902 3.58203 12.3897Z" fill="#48BEFF"></path>
+                </svg>
+                Отклеивание стекла
+            </p>
+            <p class="punct flex-alg-cntr">
+                <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.58203 12.3897C3.06427 12.3911 2.5575 12.5392 2.12035 12.8166C1.6832 13.0941 1.33354 13.4896 1.11181 13.9575C0.890087 14.4254 0.805361 14.9465 0.867437 15.4605C0.929512 15.9745 1.13585 16.4605 1.46259 16.8621L8.42778 25.3945C8.67612 25.7028 8.99446 25.9475 9.35635 26.1081C9.71823 26.2688 10.1132 26.3407 10.5085 26.3181C11.3539 26.2726 12.1172 25.8204 12.6038 25.0768L27.0723 1.77534C27.0747 1.77145 27.0772 1.7676 27.0797 1.76381C27.2155 1.55536 27.1714 1.14229 26.8912 0.882787C26.8142 0.811525 26.7235 0.756776 26.6246 0.721912C26.5256 0.687048 26.4206 0.672806 26.316 0.680065C26.2113 0.687323 26.1093 0.715928 26.0161 0.764118C25.9229 0.812307 25.8406 0.879061 25.7742 0.960268C25.769 0.966653 25.7636 0.972941 25.7581 0.979133L11.1665 17.4655C11.111 17.5283 11.0435 17.5793 10.9681 17.6158C10.8927 17.6522 10.8108 17.6733 10.7271 17.6779C10.6434 17.6824 10.5597 17.6703 10.4808 17.6421C10.4019 17.614 10.3293 17.5705 10.2674 17.5142L5.42466 13.1073C4.92171 12.6462 4.26433 12.3902 3.58203 12.3897Z" fill="#48BEFF"></path>
+                </svg>
+                Отклеивание ручек и других элементов
+            </p>
+
+        </div>
+
+        <p class="button">Узнать подробнее</p>
+
+    </section>
+           
+    <section class="section-glass-insurance wrap-section el-scroll-hidden">
+        <h2 class="title-section">Страхование стекла</h2>
+        <p class="desc">Мы предоставляем страховые полисы на нашу продукцию. С нашей страховкой, в случае каких‑либо происшествий с вашим стеклом, вы можете получить его замену абсолютно бесплатно! 
+        </p>
+        <p class="desc desc2">Ваша защита и уверенность в нашей продукции — наш приоритет</p>
+        <div class="row flex-alg-cntr">
+            <div class="container">
+                <p class="title-container">Пример работы страховки</p>
+                <div class="wrap-p">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="10" fill="#48BEFF"/>
+                    </svg>  
+                    <p class="desc">                 
+                        Предположим, вы решаете обновить стекло в вашем автомобиле, выбрав модель стекла стоимостью 10 500 
+                    </p>
+                </div>
+                <div class="wrap-p">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="10" fill="#48BEFF"/>
+                    </svg>  
+                    <p class="desc">                 
+                        Для полной уверенности, вы оформляете страховой полис, который составляет 60% от стоимости стекла, т.е., 6 300 ₽ (сроком на 1 год)
+                    </p>
+                </div>
+                <div class="wrap-p">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="10" fill="#48BEFF"/>
+                    </svg>  
+                    <p class="desc">                 
+                        Через несколько месяцев, несчастный случай: камень повредил ваше стекло. Но, благодаря страховке, вы звоните нам, и мы предоставляем вам абсолютно новое стекло в рамках страхового полиса, и вам не нужно переживать о дополнительных затратах
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <p class="title-container">Стоимость и условия</p>
+                <div class="wrap-p">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="10" fill="#48BEFF"/>
+                    </svg>  
+                    <p class="desc">                 
+                        Стоимость страхового полиса — 50% от стоимости стекла (без учёта стоимости работ по установке, только стекло)
+                    </p>
+                </div>
+                <div class="wrap-p">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="10" fill="#48BEFF"/>
+                    </svg>  
+                    <p class="desc">                 
+                        Новое стекла выдаются бесплатно только при установке нашими специалистами.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <section class="last-section el-scroll-hidden">
+
+        <img src="img/last-section-img.png" alt="">
+        <img class="el-mobile" src="img/last-section-mobile.png" alt="">
+
+        <div class="right-content">
+            <h2 class="title-section">Хотите обновить стекла в вашем транспорте?</h2>
+            <p class="desc">
+                Закажите прямо сейчас через наш интернет-магазин или позвоните нам для консультации. Не упустите шанс обеспечить свой транспорт стёклами, которые сочетают в себе стиль, безопасность и надёжность!
+            </p>
+            <div class="flex-alg-cntr">
+                <p class="button1">Перейти в каталог</p>
+                <p class="button2">Позвонить: +7 (495) 746-66-66</p>
+            </div>
+            <a href="#" class="link">Выбрать другие способы связи</a>
+        </div>
+          
+    </section>
+
+    <footer>
+        <div class="row-nav">
+            <div class="wrap-content wrap-section">
+               <div class="link-wrap">
+                   <a href="/about-company.html">О нас</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="/shop.html">Магазин</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="/services-prices.html">Услуги</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="guarantee.html">Гарантия</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="contacts.html">Контакты</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="gallery.html">Галерея</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="#">Сотруднечество</a>
+               </div>
+               <div class="link-wrap">
+                   <a href="faq.html">Вопросы</a>
+               </div>
+            </div>
+       </div>
+       <div class="wrap-bottom-content">
+        <a class="wrap-logo" href="/"><img class="logo" src="/img/logo.png" alt="" /></a> 
+        <div class="wrap-contacts-info">
+            <a href="#" class="phone"> +7 (495) 746-66-66</a>
+            <a href="#" class="mail">planeta-stecla@yandex.ru</a>
+            <div class="row-nav-mobile el-mobile">
+                <div class="wrap-content wrap-section">
+                    <div class="left-col">
+                        <div class="link-wrap">
+                            <a href="/about-company.html">О нас</a>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="/shop.html">Магазин</a>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="/services-prices.html">Услуги</a>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="/guarantee.html">Гарантия</a>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <div class="link-wrap">
+                            <a href="/contacts.html">Контакты</a>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="/gallery.html">Галерея</a>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="#">Сотруднечество</a>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="/faq.html">Вопросы</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <a href="#" class="copyright">Copyright © 2009–2023 <br> ООО «Компания Планета Стекла»</a>
+        </div>
+       </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="pop-aps.js"></script>
+  </body>
+</html>
