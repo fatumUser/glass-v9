@@ -700,26 +700,38 @@
     <script src="main.js"></script>
 
     <script>
-        // function to generate random int inside a given range
+          // function to generate random int inside a given range
         
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
         var video = document.getElementById('videoItem');
         var sources = video.getElementsByTagName('source');
-        var videoUrlsMp4=["video/video1.mp4", "video/video2.mp4", "video/video3.mp4", "video/bobcat.mp4", "video/case.mp4", "video/cat.mp4", "video/doosan.mp4",  "video/hamm.mp4", "video/hitachi.mp4", "video/hyundai.mp4", "video/jcb.mp4", "video/john-deere.mp4", "video/komatsu.mp4", "video/komatsu.mp4", "video/new-holland.mp4", "video/sdlg.mp4", "video/terex.mp4" ];
+        var videoUrlsMp4=["video/video1.mp4", "video/video2.mp4", "video/video3.mp4"];
         var random_nr = getRandomInt(0, videoUrlsMp4.length-1);
         sources[0].src = videoUrlsMp4[random_nr ];
         video.load();
         
-        setInterval(VideoRandomPlay, 15000);
+        setInterval(VideoRandomPlay, 30000);
         function VideoRandomPlay() {
             function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
         var video = document.getElementById('videoItem');
         var sources = video.getElementsByTagName('source');
-        var videoUrlsMp4=["video/video1.mp4", "video/video2.mp4", "video/video3.mp4", "video/bobcat.mp4", "video/case.mp4", "video/cat.mp4", "video/doosan.mp4",  "video/hamm.mp4", "video/hitachi.mp4", "video/hyundai.mp4", "video/jcb.mp4", "video/john-deere.mp4", "video/komatsu.mp4", "video/komatsu.mp4", "video/new-holland.mp4", "video/sdlg.mp4", "video/terex.mp4" ];
+        var videoUrlsMp4=["video/bobcat.mp4", "video/case.mp4", "video/cat.mp4", "video/doosan.mp4",  "video/hamm.mp4", "video/hitachi.mp4", "video/hyundai.mp4", "video/jcb.mp4", "video/john-deere.mp4", "video/komatsu.mp4", "video/komatsu.mp4", "video/new-holland.mp4", "video/sdlg.mp4", "video/terex.mp4" ];
+        var random_nr = getRandomInt(0, videoUrlsMp4.length-1);
+        sources[0].src = videoUrlsMp4[random_nr ];
+        video.load();
+        setTimeout(VideoRandomPlay2, 15000);
+        }
+        function VideoRandomPlay2() {
+            function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var video = document.getElementById('videoItem');
+        var sources = video.getElementsByTagName('source');
+        var videoUrlsMp4=["video/video1.mp4", "video/video2.mp4", "video/video3.mp4"];
         var random_nr = getRandomInt(0, videoUrlsMp4.length-1);
         sources[0].src = videoUrlsMp4[random_nr ];
         video.load();
